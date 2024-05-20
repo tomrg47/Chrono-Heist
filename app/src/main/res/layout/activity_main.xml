@@ -162,7 +162,7 @@
             android:maxWidth="101dp"
             android:minHeight="48dp"
             app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
-            tools:ignore="RedundantDescriptionCheck" />
+            tools:ignore="RedundantDescriptionCheck,VisualLintBounds" />
 
         <TextView
             android:id="@+id/armoury_text"
