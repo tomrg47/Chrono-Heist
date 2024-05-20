@@ -13,9 +13,12 @@
         android:theme="@style/Theme.ChronoHeist"
         tools:targetApi="31">
         <activity
+            android:name=".LevelActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
-            android:screenOrientation="landscape"
             android:exported="true"
+            android:screenOrientation="landscape"
             tools:ignore="DiscouragedApi">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
