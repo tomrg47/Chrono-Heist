@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ChronoHeist</string>
+    <string name="background_desc">Background of stars in night sky</string>
+    <string name="play_desc">Play button</string>
+    <string name="options_desc">Options button</string>
+    <string name="battlepass_desc">Battle Pass button</string>
+    <string name="armoury_desc">Armoury button</string>
+
 </resources>

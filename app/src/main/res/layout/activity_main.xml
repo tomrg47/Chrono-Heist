@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#181F5D"
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/space_background" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="180dp">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/Chrono"
+        android:layout_width="504dp"
+        android:layout_height="167dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginBottom="193dp"
+        app:srcCompat="@drawable/logopng" />
+
+    <ImageButton
+        android:id="@+id/playBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="225dp"
+        android:layout_marginBottom="115dp"
+        android:adjustViewBounds="false"
+        android:background="#00000000"
+        android:contentDescription="@string/play_desc"
+        android:maxWidth="101dp"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1" />
+
+    <ImageButton
+        android:id="@+id/battlesPassBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="224dp"
+        android:layout_marginBottom="56dp"
+        android:background="#00000000"
+        android:contentDescription="@string/battlepass_desc"
+        android:maxWidth="101dp"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1" />
+
+    <ImageButton
+        android:id="@+id/armouryBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="56dp"
+        android:background="#00000000"
+        android:contentDescription="@string/armoury_desc"
+        android:maxWidth="101dp"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1" />
+
+    <TextView
+        android:id="@+id/play_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="242dp"
+        android:layout_marginBottom="131dp"
+        android:clickable="false"
+        android:fontFamily="@font/press_start_2p"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#171717"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        tools:text="Play" />
+
+    <ImageButton
+        android:id="@+id/optionsBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="122dp"
+        android:background="#00000000"
+        android:contentDescription="@string/options_desc"
+        android:maxWidth="101dp"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1" />
+
+</RelativeLayout>

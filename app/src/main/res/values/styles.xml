@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="FGButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">#283194</item>
+    </style>
+    <style name="BuyButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:background">#A36BF2</item>
+    </style>
+</resources>
