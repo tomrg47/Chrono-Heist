@@ -30,7 +30,7 @@
         android:layout_marginBottom="180dp">
 
         <ImageButton
-            android:id="@+id/playBttn"
+            android:id="@+id/pauseOptionsBttn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -45,7 +45,7 @@
             tools:ignore="RedundantDescriptionCheck" />
 
         <TextView
-            android:id="@+id/play_text"
+            android:id="@+id/pause_options_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

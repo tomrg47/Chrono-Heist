@@ -5,8 +5,13 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="right|center_horizontal|top"
     tools:context=".LevelActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
     <FrameLayout
         android:id="@+id/PauseMenu"
@@ -14,7 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:foregroundGravity="center"
-        tools:visibility="visible">
+        tools:visibility="invisible">
 
         <ImageView
             android:id="@+id/PausedMenuBackground"
@@ -28,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal|center_vertical"
-            android:layout_marginRight="20dp"
+            android:layout_marginEnd="30dp"
             android:layout_marginBottom="100dp"
             android:fontFamily="@font/aldrich"
             android:gravity="center_horizontal|center_vertical"
@@ -37,10 +42,93 @@
             tools:text="Paused" />
 
         <FrameLayout
+            android:id="@+id/PlayBttnFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/pauseOptionsBttn"
+                android:layout_width="102dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:adjustViewBounds="false"
+                android:background="#00000000"
+                android:contentDescription="@string/play_desc"
+                android:cropToPadding="false"
+                android:maxWidth="101dp"
+                android:minHeight="48dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ui_flat_button_medium_lock_02a1"
+                tools:ignore="RedundantDescriptionCheck" />
+
+            <TextView
+                android:id="@+id/pause_options_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:fontFamily="@font/aldrich"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                tools:text="Play" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/QuitBttnFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="120dp">
+
+            <ImageButton
+                android:id="@+id/pauseOptionsBttn2"
+                android:layout_width="102dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:adjustViewBounds="false"
+                android:background="#00000000"
+                android:contentDescription="@string/play_desc"
+                android:cropToPadding="false"
+                android:maxWidth="101dp"
+                android:minHeight="48dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ui_flat_button_medium_lock_02a1"
+                tools:ignore="RedundantDescriptionCheck" />
+
+            <TextView
+                android:id="@+id/Quit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:fontFamily="@font/aldrich"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                tools:text="Quit" />
+        </FrameLayout>
+
+        <FrameLayout
             android:id="@+id/CloseBttnFrame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="right"
+            android:layout_gravity="end"
             android:layout_marginTop="80dp"
             android:layout_marginEnd="50dp">
 
@@ -48,14 +136,14 @@
                 android:id="@+id/CloseBttn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="right|top"
+                android:layout_gravity="top|end"
                 android:background="#00000000"
                 android:contentDescription="CloseButton"
                 android:contextClickable="true"
                 app:srcCompat="@drawable/button_red" />
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/X_closeimg"
                 android:layout_width="45dp"
                 android:layout_height="54dp"
                 android:layout_gravity="center"
