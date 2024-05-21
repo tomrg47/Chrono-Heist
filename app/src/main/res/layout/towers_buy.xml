@@ -26,13 +26,21 @@
         app:srcCompat="@drawable/button_disable_3slides" />
 
     <ImageView
+        android:id="@+id/closeButtonBG"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:srcCompat="@drawable/button_disable"
+        tools:layout_editor_absoluteX="357dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <ImageView
         android:id="@+id/closeButton"
         android:layout_width="67dp"
-        android:layout_height="61dp"
+        android:layout_height="57dp"
         android:layout_marginBottom="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/regular_01" />
 
@@ -81,5 +89,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/selectedSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ui_flat_select_01a1"
+        tools:layout_editor_absoluteX="437dp"
+        tools:layout_editor_absoluteY="189dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
