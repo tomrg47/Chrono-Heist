@@ -25,6 +25,7 @@
             android:id="@+id/PausedMenuBackground"
             android:layout_width="303dp"
             android:layout_height="434dp"
+            android:contentDescription="Background of pause menu"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/banner_vertical" />
 
