@@ -21,7 +21,6 @@
         <ImageView
             android:layout_width="300dp"
             android:layout_height="160dp"
-            android:src="@drawable/chronoheist"
             />
         
         <EditText
