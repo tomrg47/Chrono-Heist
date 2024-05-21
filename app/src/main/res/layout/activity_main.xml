@@ -5,112 +5,192 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#181F5D"
+    android:background="#363760"
 
     tools:context=".MainActivity">
 
     <ImageView
         android:id="@+id/stars"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/space_background" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/background_desc"
+        android:contextClickable="false"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background" />
 
     <FrameLayout
+        android:id="@+id/PlayBttnFrame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginStart="225dp"
-        android:layout_marginTop="180dp">
+        android:layout_marginBottom="180dp">
+
+        <ImageButton
+            android:id="@+id/pauseOptionsBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:adjustViewBounds="false"
+            android:background="#00000000"
+            android:contentDescription="@string/play_desc"
+            android:cropToPadding="false"
+            android:maxWidth="101dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+            tools:ignore="RedundantDescriptionCheck" />
+
+        <TextView
+            android:id="@+id/pause_options_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:clickable="false"
+            android:fontFamily="@font/aldrich"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            tools:text="Play" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/OptionsBttnFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="181dp"
+        android:layout_marginEnd="225dp"
+        android:layout_marginBottom="183dp"
+        android:layout_toEndOf="@+id/PlayBttnFrame">
+
+        <ImageButton
+            android:id="@+id/optionsBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:contentDescription="@string/options_desc"
+            android:maxWidth="101dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+            tools:ignore="VisualLintBounds,RedundantDescriptionCheck" />
+
+        <TextView
+            android:id="@+id/options_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:clickable="false"
+            android:fontFamily="@font/aldrich"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            tools:text="Options"
+            tools:ignore="VisualLintBounds" />
 
     </FrameLayout>
 
-    <ImageView
-        android:id="@+id/Chrono"
-        android:layout_width="504dp"
-        android:layout_height="167dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="115dp"
-        android:layout_marginEnd="112dp"
-        android:layout_marginBottom="193dp"
-        app:srcCompat="@drawable/logopng" />
-
-    <ImageButton
-        android:id="@+id/playBttn"
+    <FrameLayout
+        android:id="@+id/BattlePassBttnFrame"
         android:layout_width="wrap_content"
-        android:layout_height="58dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-
         android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
         android:layout_marginStart="225dp"
-        android:layout_marginBottom="115dp"
-        android:adjustViewBounds="false"
-        android:background="#00000000"
-        android:contentDescription="@string/play_desc"
-        android:maxWidth="101dp"
-        android:minHeight="48dp"
-        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1" />
+        android:layout_marginBottom="100dp">
 
-    <ImageButton
-        android:id="@+id/battlesPassBttn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="224dp"
-        android:layout_marginBottom="56dp"
-        android:background="#00000000"
-        android:contentDescription="@string/battlepass_desc"
-        android:maxWidth="101dp"
-        android:minHeight="48dp"
-        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1" />
+        <ImageButton
+            android:id="@+id/battlesPassBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:contentDescription="@string/battlepass_desc"
+            android:maxWidth="101dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+            tools:ignore="RedundantDescriptionCheck" />
 
-    <ImageButton
-        android:id="@+id/armouryBttn"
+        <TextView
+            android:id="@+id/battlepass_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:clickable="false"
+            android:fontFamily="@font/aldrich"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            tools:text="Battle Pass" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/ArmouryBttnFrame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginStart="89dp"
         android:layout_marginEnd="225dp"
-        android:layout_marginBottom="56dp"
-        android:background="#00000000"
-        android:contentDescription="@string/armoury_desc"
-        android:maxWidth="101dp"
-        android:minHeight="48dp"
-        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1" />
+        android:layout_marginBottom="100dp"
+        android:layout_toEndOf="@+id/BattlePassBttnFrame">
 
-    <TextView
-        android:id="@+id/play_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="center"
-        android:layout_marginStart="242dp"
-        android:layout_marginBottom="131dp"
-        android:clickable="false"
-        android:fontFamily="@font/press_start_2p"
-        android:textAlignment="center"
-        android:textAllCaps="true"
-        android:textColor="#171717"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:typeface="normal"
-        tools:text="Play" />
+        <ImageButton
+            android:id="@+id/armouryBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:contentDescription="@string/armoury_desc"
+            android:maxWidth="101dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+            tools:ignore="RedundantDescriptionCheck,VisualLintBounds" />
 
-    <ImageButton
-        android:id="@+id/optionsBttn"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_alignParentEnd="true"
+        <TextView
+            android:id="@+id/armoury_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:clickable="false"
+            android:fontFamily="@font/aldrich"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            tools:ignore="VisualLintBounds"
+            tools:text="Armoury" />
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/Chrono_Heist"
+        android:layout_width="394dp"
+        android:layout_height="122dp"
+
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="225dp"
-        android:layout_marginBottom="122dp"
-        android:background="#00000000"
-        android:contentDescription="@string/options_desc"
-        android:maxWidth="101dp"
-        android:minHeight="48dp"
-        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="289dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/logo" />
 
 </RelativeLayout>
