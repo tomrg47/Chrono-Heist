@@ -5,5 +5,9 @@
     <string name="options_desc">Options button</string>
     <string name="battlepass_desc">Battle Pass button</string>
     <string name="armoury_desc">Armoury button</string>
+    <string name="buy">BUY</string>
+    <string name="background_of_pause_menu">Background of pause menu</string>
+    <string name="play_button">Play button</string>
+    <string name="closebutton">CloseButton</string>
 
 </resources>

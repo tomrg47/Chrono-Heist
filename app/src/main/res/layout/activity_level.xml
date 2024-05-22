@@ -19,9 +19,10 @@
             android:id="@+id/PausedMenuBackground"
             android:layout_width="303dp"
             android:layout_height="434dp"
-            android:contentDescription="Background of pause menu"
+            android:contentDescription="@string/background_of_pause_menu"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/banner_vertical" />
+            app:srcCompat="@drawable/banner_vertical"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/Paused_txt"
@@ -50,13 +51,13 @@
 
                 android:adjustViewBounds="false"
                 android:background="#00000000"
-                android:contentDescription="@string/play_desc"
+                android:contentDescription="@string/play_button"
                 android:cropToPadding="false"
                 android:maxWidth="101dp"
                 android:minHeight="48dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/ui_flat_button_medium_lock_02a1"
-                tools:ignore="RedundantDescriptionCheck" />
+                tools:ignore="HardcodedText,RedundantDescriptionCheck" />
 
             <TextView
                 android:id="@+id/pause_options_text"
@@ -92,13 +93,13 @@
 
                 android:adjustViewBounds="false"
                 android:background="#00000000"
-                android:contentDescription="@string/play_desc"
+                android:contentDescription="@string/play_button"
                 android:cropToPadding="false"
                 android:maxWidth="101dp"
                 android:minHeight="48dp"
                 android:scaleType="fitXY"
                 app:srcCompat="@drawable/ui_flat_button_medium_lock_02a1"
-                tools:ignore="RedundantDescriptionCheck" />
+                tools:ignore="HardcodedText,RedundantDescriptionCheck" />
 
             <TextView
                 android:id="@+id/Quit_text"
@@ -133,9 +134,10 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="top|end"
                 android:background="#00000000"
-                android:contentDescription="CloseButton"
+                android:contentDescription="@string/closebutton"
                 android:contextClickable="true"
-                app:srcCompat="@drawable/button_red" />
+                app:srcCompat="@drawable/button_red"
+                tools:ignore="HardcodedText" />
 
             <ImageView
                 android:id="@+id/X_closeimg"
@@ -144,10 +146,20 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="8dp"
                 android:clickable="false"
-                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+                tools:ignore="ContentDescription" />
 
         </FrameLayout>
 
     </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88AF59"
+        android:scaleType="center"
+        app:srcCompat="@drawable/tiles"
+        tools:ignore="ContentDescription" />
 
 </RelativeLayout>

@@ -6,15 +6,18 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:label="ChronoHeist"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChronoHeist"
         tools:targetApi="31">
+
         <activity
             android:name=".LevelActivity"
             android:screenOrientation="landscape"
-            android:exported="false"
+            android:exported="true"
             tools:ignore="DiscouragedApi" />
+
         <activity
             android:name=".LoginActivity"
             android:exported="true"
@@ -22,17 +25,6 @@
             tools:ignore="DiscouragedApi">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".LoginActivity"
-            android:screenOrientation="landscape"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

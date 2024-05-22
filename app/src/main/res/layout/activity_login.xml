@@ -10,18 +10,20 @@
     android:layout_gravity="center"
     android:padding="16dp"
     
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    tools:ignore="DiscouragedApi">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <ImageView
             android:layout_width="300dp"
             android:layout_height="160dp"
-            />
+            tools:ignore="ContentDescription" />
         
         <EditText
             android:layout_width="match_parent"
@@ -35,7 +37,7 @@
             android:padding="18dp"
             android:inputType="text"
             android:id="@+id/username_input"
-            />
+            tools:ignore="HardcodedText" />
 
         <EditText
             android:layout_width="match_parent"
@@ -48,7 +50,8 @@
             android:background="@drawable/rounded_corner"
             android:padding="18dp"
             android:inputType="textPassword"
-            android:id="@+id/password_input" />
+            android:id="@+id/password_input"
+            tools:ignore="HardcodedText" />
 
         <Button
             android:layout_width="match_parent"
@@ -59,7 +62,8 @@
             android:padding="18dp"
             android:layout_marginTop="32dp"
             android:textSize="20sp"
-            android:id = "@+id/login_btn"/>
+            android:id = "@+id/login_btn"
+            tools:ignore="HardcodedText" />
 
         <Button
             android:layout_width="match_parent"
@@ -70,7 +74,8 @@
             android:padding="18dp"
             android:layout_marginTop="2dp"
             android:textSize="20sp"
-            android:id = "@+id/createAccount_btn"/>
+            android:id = "@+id/createAccount_btn"
+            tools:ignore="HardcodedText" />
 
 
         <TextView
@@ -79,7 +84,8 @@
             android:text ="Social Login"
             android:textSize="18sp"
             android:textColor="@color/white"
-            android:layout_marginTop="32dp"/>
+            android:layout_marginTop="32dp"
+            tools:ignore="HardcodedText" />
         
         <LinearLayout
             android:layout_width="match_parent"
@@ -94,7 +100,7 @@
                 android:layout_margin="16dp"
                 android:src="@drawable/instagram"
                 android:id="@+id/instagram_btn"
-                />
+                tools:ignore="ContentDescription" />
 
 
             <ImageView
@@ -102,14 +108,16 @@
                 android:layout_height="64dp"
                 android:layout_margin="16dp"
                 android:src="@drawable/facebook"
-                android:id="@+id/facebook_btn"/>
+                android:id="@+id/facebook_btn"
+                tools:ignore="ContentDescription" />
 
             <ImageView
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_margin="16dp"
                 android:src="@drawable/linkedin"
-                android:id="@+id/linkedin_btn"/>
+                android:id="@+id/linkedin_btn"
+                tools:ignore="ContentDescription" />
 
 
 
