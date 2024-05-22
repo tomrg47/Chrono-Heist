@@ -1,9 +1,9 @@
 <resources>
-    <string name="app_name">ChronoHeist</string>
-    <string name="background_desc">Background of stars in night sky</string>
-    <string name="play_desc">Play button</string>
-    <string name="options_desc">Options button</string>
-    <string name="battlepass_desc">Battle Pass button</string>
-    <string name="armoury_desc">Armoury button</string>
+    <string name="app_name" translatable="false">ChronoHeist</string>
+    <string name="background_desc" translatable="false">Background of stars in night sky</string>
+    <string name="play_desc" translatable="false">Play button</string>
+    <string name="options_desc" translatable="false">Options button</string>
+    <string name="battlepass_desc" translatable="false">Battle Pass button</string>
+    <string name="armoury_desc" translatable="false">Armoury button</string>
 
 </resources>

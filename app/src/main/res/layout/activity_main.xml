@@ -18,31 +18,43 @@
         android:contextClickable="false"
         android:cropToPadding="false"
         android:scaleType="centerCrop"
-        app:srcCompat="@drawable/background" />
+        android:src="@drawable/stars" />
 
     <FrameLayout
         android:id="@+id/PlayBttnFrame"
-        android:layout_width="wrap_content"
+        android:layout_width="99dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="225dp"
-        android:layout_marginBottom="180dp">
+        android:layout_marginBottom="180dp"
+        android:visibility="visible"
+        tools:visibility="visible">
 
         <ImageButton
             android:id="@+id/pauseOptionsBttn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-
             android:adjustViewBounds="false"
             android:background="#00000000"
             android:contentDescription="@string/play_desc"
             android:cropToPadding="false"
             android:maxWidth="101dp"
             android:minHeight="48dp"
+            android:visibility="gone"
             app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
-            tools:ignore="RedundantDescriptionCheck" />
+            tools:ignore="RedundantDescriptionCheck"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="TextView"
+            android:textColor="#FF0000"
+            android:textSize="19sp" />
 
         <TextView
             android:id="@+id/pause_options_text"
@@ -54,24 +66,24 @@
             android:fontFamily="@font/aldrich"
             android:textAlignment="center"
             android:textAllCaps="true"
+            android:textColor="#000000"
             android:textSize="19sp"
             android:textStyle="bold"
             android:typeface="normal"
-            tools:text="Play" />
+            android:visibility="visible"
+            tools:text="Play"
+            tools:visibility="visible" />
+
     </FrameLayout>
 
     <FrameLayout
         android:id="@+id/OptionsBttnFrame"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="89dp"
-        android:layout_marginTop="181dp"
         android:layout_marginEnd="225dp"
-        android:layout_marginBottom="183dp"
-        android:layout_toEndOf="@+id/PlayBttnFrame">
+        android:layout_marginBottom="183dp">
 
         <ImageButton
             android:id="@+id/optionsBttn"
@@ -86,6 +98,15 @@
             tools:ignore="VisualLintBounds,RedundantDescriptionCheck" />
 
         <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/aldrich"
+            android:text="TextView"
+            android:textColor="#FF0000"
+            android:textSize="19sp" />
+
+        <TextView
             android:id="@+id/options_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -98,8 +119,8 @@
             android:textSize="15sp"
             android:textStyle="bold"
             android:typeface="normal"
-            tools:text="Options"
-            tools:ignore="VisualLintBounds" />
+            tools:ignore="VisualLintBounds"
+            tools:text="Options" />
 
     </FrameLayout>
 
@@ -147,10 +168,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="89dp"
         android:layout_marginEnd="225dp"
-        android:layout_marginBottom="100dp"
-        android:layout_toEndOf="@+id/BattlePassBttnFrame">
+        android:layout_marginBottom="100dp">
 
         <ImageButton
             android:id="@+id/armouryBttn"
@@ -188,9 +207,11 @@
 
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="289dp"
+        android:layout_marginBottom="276dp"
         android:contentDescription="@string/app_name"
-        android:scaleType="centerCrop"
+        android:scaleType="fitCenter"
+        android:scaleX="2"
+        android:scaleY="2"
         app:srcCompat="@drawable/logo" />
 
 </RelativeLayout>
