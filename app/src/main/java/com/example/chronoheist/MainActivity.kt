@@ -1,5 +1,6 @@
 package com.example.chronoheist
 
+import android.annotation.SuppressLint
 import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.util.Log
@@ -18,12 +19,6 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
         requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE
-        val playButtonFrame = findViewById<FrameLayout>(R.id.PlayBttnFrame)
-        val playButtonText = findViewById<TextView>(R.id.pause_options_text)
-        playButtonFrame.visibility = View.VISIBLE
-        playButtonText.visibility = View.VISIBLE
-        Log.d("Debug", "Play Button Frame visibility: ${playButtonFrame.visibility}")
-        Log.d("Debug", "Play Button Text visibility: ${playButtonText.visibility}")
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
