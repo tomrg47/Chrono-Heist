@@ -17,8 +17,8 @@
 
     <ImageView
         android:id="@+id/game_title_image"
-        android:layout_width="wrap_content"
-        android:layout_height="190dp"
+        android:layout_width="426dp"
+        android:layout_height="159dp"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:paddingBottom="16dp"
@@ -27,23 +27,21 @@
 
     <TableLayout
         android:id="@+id/MapSelectTable"
-        android:layout_width="512dp"
-        android:layout_height="151dp"
+        android:layout_width="706dp"
+        android:layout_height="104dp"
         android:layout_below="@id/game_title_image"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
         android:stretchColumns="*">
 
 
-
         <TableRow
-            android:layout_width="match_parent"
+            android:layout_width="745dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="20dp"/>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" />
     </TableLayout>
 
 </RelativeLayout>

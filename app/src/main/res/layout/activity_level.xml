@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#363760">
+    android:background="#00363760">
 
     <ImageView
         android:id="@+id/background"
@@ -20,10 +20,9 @@
         android:id="@+id/example_enemy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/enemy_run_animation"
         android:layout_marginTop="-255dp"
-        android:visibility="gone"
-        />
+        android:src="@drawable/enemy_run_animation"
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/archer_blue"
@@ -36,7 +35,8 @@
     <FrameLayout
         android:id="@+id/diagonalPaths"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/pathpoint5"
@@ -65,7 +65,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="295dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/path3point"
@@ -105,7 +106,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/path1point"
@@ -149,7 +151,8 @@
         android:layout_centerVertical="true"
         android:orientation="horizontal"
         android:rotation="180"
-        android:rotationY="180">
+        android:rotationY="180"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/path2point"
@@ -188,7 +191,8 @@
         android:id="@+id/bushes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="false">
+        android:clickable="false"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/bush9"
@@ -266,7 +270,8 @@
         android:id="@+id/towerSelects4"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="false">
+        android:clickable="false"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/path4tower1"
@@ -309,7 +314,8 @@
         android:id="@+id/towerSelects3"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="false">
+        android:clickable="false"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/path3tower1"
@@ -352,7 +358,8 @@
         android:id="@+id/towerSelects2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="false">
+        android:clickable="false"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/path2tower1"
@@ -395,7 +402,8 @@
         android:id="@+id/towerSelects1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:clickable="false">
+        android:clickable="false"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/path1tower1"
@@ -439,7 +447,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginStart="550dp">
+        android:layout_marginStart="550dp"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/base_ground"
@@ -464,7 +473,8 @@
         android:layout_alignParentRight="true"
         android:layout_gravity="end"
         android:layout_marginTop="5dp"
-        android:layout_marginEnd="-10dp">
+        android:layout_marginEnd="-10dp"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/banner"
@@ -502,10 +512,11 @@
         android:id="@+id/waveFrame"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_gravity="end"
         android:layout_marginTop="310dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true">
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/banner2"
@@ -547,6 +558,279 @@
             android:layout_height="58dp"
             android:layout_marginStart="20dp"
             android:src="@drawable/m_idle__noshadow_" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/PauseMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        tools:visibility="gone">
+
+        <ImageView
+            android:id="@+id/PausedMenuBackground"
+            android:layout_width="303dp"
+            android:layout_height="434dp"
+            android:contentDescription="Background of pause menu"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/banner_vertical" />
+
+        <TextView
+            android:id="@+id/Paused_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="100dp"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center_horizontal|center_vertical"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            tools:text="Paused" />
+
+        <FrameLayout
+            android:id="@+id/PlayBttnFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/pauseOptionsBttn"
+                android:layout_width="102dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:adjustViewBounds="false"
+                android:background="#00000000"
+                android:contentDescription="@string/play_desc"
+                android:cropToPadding="false"
+                android:maxWidth="101dp"
+                android:minHeight="48dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ui_flat_button_medium_lock_02a1"
+                tools:ignore="RedundantDescriptionCheck" />
+
+            <TextView
+                android:id="@+id/pause_options_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:fontFamily="@font/aldrich"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                tools:text="Play" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/QuitBttnFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="120dp">
+
+            <ImageButton
+                android:id="@+id/pauseOptionsBttn2"
+                android:layout_width="102dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+
+                android:adjustViewBounds="false"
+                android:background="#00000000"
+                android:contentDescription="@string/play_desc"
+                android:cropToPadding="false"
+                android:maxWidth="101dp"
+                android:minHeight="48dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/ui_flat_button_medium_lock_02a1"
+                tools:ignore="RedundantDescriptionCheck" />
+
+            <TextView
+                android:id="@+id/Quit_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:clickable="false"
+                android:contextClickable="false"
+                android:fontFamily="@font/aldrich"
+                android:linksClickable="false"
+                android:longClickable="false"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                tools:text="Quit" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/CloseBttnFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="50dp">
+
+            <ImageButton
+                android:id="@+id/CloseBttn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|end"
+                android:background="#00000000"
+                android:contentDescription="CloseButton"
+                android:contextClickable="true"
+                app:srcCompat="@drawable/button_red" />
+
+            <ImageView
+                android:id="@+id/X_closeimg"
+                android:layout_width="45dp"
+                android:layout_height="54dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:clickable="false"
+                app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/buyMenuFrame"
+        android:layout_width="wrap_content"
+        android:layout_height="350dp"
+        android:layout_alignBottom="@id/background"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="false"
+        android:layout_centerHorizontal="false"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="34dp">
+
+        <ImageView
+            android:id="@+id/buyMenuBG"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleY="1.75"
+            app:srcCompat="@drawable/button_hover_9slides" />
+
+        <FrameLayout
+            android:id="@+id/archerTowerFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/archerTowerBttn"
+                android:layout_width="58dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/tower_blue"
+                android:backgroundTint="#00FFFFFF"
+                android:foreground="@drawable/tower_blue"
+                android:textAlignment="viewEnd"
+                android:textColorLink="#FFFFFF"
+                android:textDirection="ltr" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Archer Tower"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/aldrich"
+                android:text="200"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:scaleX=".45"
+                android:scaleY=".45"
+                app:srcCompat="@drawable/g_idle__noshadow_" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/closeBttnFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:scaleX=".5"
+            android:scaleY=".5">
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="#00000000"
+                app:srcCompat="@drawable/button_red" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                app:srcCompat="@drawable/disable_01" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/buyBttnFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="40dp">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="196dp"
+                android:layout_height="65dp"
+                android:layout_gravity="bottom|center"
+                android:background="#00000000"
+                android:scaleX="0.75"
+                app:srcCompat="@drawable/button_hover_3slides" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/aldrich"
+                android:text="TextView"
+                android:textAllCaps="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="Buy" />
+        </FrameLayout>
 
     </FrameLayout>
 
