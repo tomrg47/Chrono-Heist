@@ -724,6 +724,118 @@
             app:srcCompat="@drawable/button_hover_9slides" />
 
         <FrameLayout
+            android:id="@+id/goldMineFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/goldMineBttn"
+                android:layout_width="68dp"
+                android:layout_height="65dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="175dp"
+                android:background="@drawable/goldmine_inactive"
+                android:backgroundTint="#00FFFFFF"
+                android:foreground="@drawable/goldmine_inactive"
+                android:text="gold mine"
+                android:textAlignment="viewEnd"
+                android:textColor="#00FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textDirection="ltr" />
+
+            <TextView
+                android:id="@+id/goldMineText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="190dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Gold Mine"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/goldMineCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="210dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/aldrich"
+                android:text="250"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/goldMineGoldIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="30dp"
+                android:scaleX=".45"
+                android:scaleY=".45"
+                app:srcCompat="@drawable/g_idle__noshadow_" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/barracksFrame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/barracksBttn"
+                android:layout_width="58dp"
+                android:layout_height="88dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/house_blue"
+                android:backgroundTint="#00FFFFFF"
+                android:foreground="@drawable/house_blue"
+                android:text="Barracks"
+                android:textAlignment="viewEnd"
+                android:textColor="#00FFFFFF"
+                android:textColorLink="#FFFFFF"
+                android:textDirection="ltr" />
+
+            <TextView
+                android:id="@+id/barracksText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="120dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/aldrich"
+                android:text="Barracks"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/barracksCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="140dp"
+                android:layout_marginEnd="50dp"
+                android:fontFamily="@font/aldrich"
+                android:text="200"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/barracksGoldIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:scaleX=".45"
+                android:scaleY=".45"
+                app:srcCompat="@drawable/g_idle__noshadow_" />
+        </FrameLayout>
+
+        <FrameLayout
             android:id="@+id/archerTowerFrame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -737,12 +849,14 @@
                 android:background="@drawable/tower_blue"
                 android:backgroundTint="#00FFFFFF"
                 android:foreground="@drawable/tower_blue"
+                android:text="Archer Tower"
                 android:textAlignment="viewEnd"
+                android:textColor="#00FFFFFF"
                 android:textColorLink="#FFFFFF"
                 android:textDirection="ltr" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/archerTowerText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -754,23 +868,23 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/archerTowerCost"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:layout_marginTop="70dp"
                 android:layout_marginEnd="50dp"
                 android:fontFamily="@font/aldrich"
-                android:text="200"
+                android:text="100"
                 android:textSize="12sp"
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/archerTowerGoldIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginEnd="30dp"
                 android:scaleX=".45"
                 android:scaleY=".45"
