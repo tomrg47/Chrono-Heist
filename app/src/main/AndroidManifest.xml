@@ -14,8 +14,8 @@
             android:name=".LevelSelectActivity"
             android:exported="false" />
         <activity
-            android:name=".LevelActivity"
-            android:exported="false"
+            android:name=".Level1Activity"
+            android:exported="true"
             android:screenOrientation="landscape"
             tools:ignore="DiscouragedApi" />
         <activity

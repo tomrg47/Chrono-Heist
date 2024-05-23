@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/enemy_run_animation"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/hobbit___run1" android:duration="100" />
+    <item android:drawable="@drawable/hobbit___run2" android:duration="100" />
+    <item android:drawable="@drawable/hobbit___run3" android:duration="100" />
+    <item android:drawable="@drawable/hobbit___run4" android:duration="100" />
+    <item android:drawable="@drawable/hobbit___run5" android:duration="100" />
+    <item android:drawable="@drawable/hobbit___run6" android:duration="100" />
+    <item android:drawable="@drawable/hobbit___run7" android:duration="100" />
+    <item android:drawable="@drawable/hobbit___run8" android:duration="100" />
+    <item android:drawable="@drawable/hobbit___run9" android:duration="100" />
+    <item android:drawable="@drawable/hobbit___run10" android:duration="100" />
+    <!-- Add more items for each frame of the animation -->
+
+</animation-list>

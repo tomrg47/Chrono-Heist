@@ -16,9 +16,6 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var passwordInput : EditText
     private lateinit var loginBtn : Button
 
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -42,9 +39,5 @@ class LoginActivity : AppCompatActivity() {
             //intent.putExtra("PASSWORD", password)
             startActivity(intent)
         }
-
-
-
-
     }
 }

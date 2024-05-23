@@ -5,5 +5,13 @@
     <string name="options_desc" translatable="false">Options button</string>
     <string name="battlepass_desc" translatable="false">Battle Pass button</string>
     <string name="armoury_desc" translatable="false">Armoury button</string>
+    <string name="ground_for_castle">Ground for castle</string>
+    <string name="blue_castle">Blue Castle</string>
+    <string name="ui_banner">UI Banner</string>
+    <string name="hptext">hpText</string>
+    <string name="textview">TextView</string>
+    <string name="path">path</string>
+    <string name="grassy_background">Grassy Background</string>
+    <string name="coins_text">Coins Text</string>
 
 </resources>
