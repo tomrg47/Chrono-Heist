@@ -22,21 +22,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="-255dp"
         android:src="@drawable/enemy_run_animation"
-        android:visibility="gone" />
+        android:visibility="invisible" />
 
     <ImageView
         android:id="@+id/archer_blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/archer_idle_animation"
-        android:visibility="gone" />
+        android:visibility="invisible" />
 
 
     <FrameLayout
         android:id="@+id/diagonalPaths"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/pathpoint5"
@@ -66,7 +66,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="295dp"
         android:orientation="horizontal"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/path3point"
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="55dp"
         android:orientation="horizontal"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/path1point"
@@ -152,7 +152,7 @@
         android:orientation="horizontal"
         android:rotation="180"
         android:rotationY="180"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/path2point"
@@ -192,7 +192,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="false"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/bush9"
@@ -271,7 +271,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="false"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/path4tower1"
@@ -315,7 +315,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="false"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/path3tower1"
@@ -359,7 +359,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="false"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/path2tower1"
@@ -403,7 +403,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clickable="false"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/path1tower1"
@@ -448,7 +448,7 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginStart="550dp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/base_ground"
@@ -474,7 +474,7 @@
         android:layout_gravity="end"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="-10dp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/banner"
@@ -516,7 +516,7 @@
         android:layout_alignParentRight="true"
         android:layout_gravity="end"
         android:layout_marginTop="310dp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/banner2"
@@ -714,7 +714,8 @@
         android:layout_centerHorizontal="false"
         android:layout_centerVertical="true"
         android:layout_marginTop="34dp"
-        android:layout_marginBottom="34dp">
+        android:layout_marginBottom="34dp"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/buyMenuBG"
