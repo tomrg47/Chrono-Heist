@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#00363760">
+    android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/background"
@@ -22,14 +21,21 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="-255dp"
         android:src="@drawable/enemy_run_animation"
-        android:visibility="invisible" />
+        android:visibility="gone" />
 
     <ImageView
         android:id="@+id/archer_blue"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/archer_idle_animation"
-        android:visibility="invisible" />
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/knight_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/knight_attack_animation"
+        android:visibility="gone" />
 
 
     <FrameLayout
@@ -195,6 +201,22 @@
         android:visibility="visible">
 
         <ImageView
+            android:id="@+id/bush14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="660dp"
+            android:layout_marginTop="305dp"
+            android:src="@drawable/_8" />
+
+        <ImageView
+            android:id="@+id/bush2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="460dp"
+            android:layout_marginTop="345dp"
+            android:src="@drawable/_8" />
+
+        <ImageView
             android:id="@+id/bush9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -249,7 +271,7 @@
             android:src="@drawable/_8" />
 
         <ImageView
-            android:id="@+id/bush14"
+            android:id="@+id/bush17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="660dp"
@@ -280,7 +302,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="360dp"
             android:layout_weight="1"
-            android:background="@drawable/ui_select_animation" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path4tower2"
@@ -289,7 +311,7 @@
             android:layout_marginStart="200dp"
             android:layout_marginTop="360dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path4tower3"
@@ -298,7 +320,7 @@
             android:layout_marginStart="280dp"
             android:layout_marginTop="360dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path4tower4"
@@ -307,7 +329,7 @@
             android:layout_marginStart="360dp"
             android:layout_marginTop="360dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
     </FrameLayout>
 
     <FrameLayout
@@ -324,7 +346,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="245dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path3tower2"
@@ -333,7 +355,7 @@
             android:layout_marginStart="200dp"
             android:layout_marginTop="245dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path3tower3"
@@ -342,7 +364,7 @@
             android:layout_marginStart="280dp"
             android:layout_marginTop="245dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path3tower4"
@@ -351,7 +373,7 @@
             android:layout_marginStart="360dp"
             android:layout_marginTop="245dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
     </FrameLayout>
 
     <FrameLayout
@@ -368,7 +390,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="125dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path2tower2"
@@ -377,7 +399,7 @@
             android:layout_marginStart="200dp"
             android:layout_marginTop="125dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path2tower3"
@@ -386,7 +408,7 @@
             android:layout_marginStart="280dp"
             android:layout_marginTop="125dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path2tower4"
@@ -395,7 +417,7 @@
             android:layout_marginStart="360dp"
             android:layout_marginTop="125dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
     </FrameLayout>
 
     <FrameLayout
@@ -412,7 +434,7 @@
             android:layout_marginStart="120dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path1tower2"
@@ -421,7 +443,7 @@
             android:layout_marginStart="200dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path1tower3"
@@ -430,7 +452,7 @@
             android:layout_marginStart="280dp"
             android:layout_marginTop="5dp"
             android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
 
         <ImageView
             android:id="@+id/path1tower4"
@@ -438,8 +460,7 @@
             android:layout_height="48dp"
             android:layout_marginStart="360dp"
             android:layout_marginTop="5dp"
-            android:layout_weight="1"
-            android:src="@drawable/ui_flat_select_01a1" />
+            android:src="@drawable/ui_flat_select_01a4" />
     </FrameLayout>
 
     <FrameLayout
@@ -497,7 +518,7 @@
             android:textStyle="bold" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/pause_bttn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="50dp"
@@ -557,7 +578,7 @@
             android:layout_width="62dp"
             android:layout_height="58dp"
             android:layout_marginStart="20dp"
-            android:src="@drawable/m_idle__noshadow_" />
+            android:src="@drawable/g_idle__noshadow_" />
 
     </FrameLayout>
 
@@ -566,8 +587,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+        android:elevation="10dp"
         android:foregroundGravity="center"
-        tools:visibility="gone">
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/PausedMenuBackground"
@@ -585,16 +607,16 @@
             android:layout_marginEnd="30dp"
             android:layout_marginBottom="100dp"
             android:fontFamily="@font/aldrich"
-            android:gravity="center_horizontal|center_vertical"
+            android:text="Paused"
             android:textSize="34sp"
-            android:textStyle="bold"
-            tools:text="Paused" />
+            android:textStyle="bold" />
 
         <FrameLayout
             android:id="@+id/PlayBttnFrame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            android:layout_marginTop="-10dp">
 
             <ImageButton
                 android:id="@+id/pauseOptionsBttn"
@@ -613,22 +635,16 @@
                 tools:ignore="RedundantDescriptionCheck" />
 
             <TextView
-                android:id="@+id/pause_options_text"
+                android:id="@+id/options_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="3dp"
-                android:clickable="false"
-                android:contextClickable="false"
                 android:fontFamily="@font/aldrich"
-                android:linksClickable="false"
-                android:longClickable="false"
-                android:textAlignment="center"
-                android:textAllCaps="true"
+                android:text="OPTIONS"
                 android:textSize="19sp"
-                android:textStyle="bold"
-                android:typeface="normal"
-                tools:text="Play" />
+                android:textStyle="bold" />
+
         </FrameLayout>
 
         <FrameLayout
@@ -655,22 +671,15 @@
                 tools:ignore="RedundantDescriptionCheck" />
 
             <TextView
-                android:id="@+id/Quit_text"
+                android:id="@+id/quit_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="3dp"
-                android:clickable="false"
-                android:contextClickable="false"
                 android:fontFamily="@font/aldrich"
-                android:linksClickable="false"
-                android:longClickable="false"
-                android:textAlignment="center"
-                android:textAllCaps="true"
+                android:text="QUIT"
                 android:textSize="19sp"
-                android:textStyle="bold"
-                android:typeface="normal"
-                tools:text="Quit" />
+                android:textStyle="bold" />
         </FrameLayout>
 
         <FrameLayout
@@ -714,6 +723,7 @@
         android:layout_centerHorizontal="false"
         android:layout_centerVertical="true"
         android:layout_marginTop="34dp"
+        android:layout_marginEnd="100dp"
         android:layout_marginBottom="34dp"
         android:visibility="gone">
 
@@ -906,6 +916,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:background="#00000000"
+                android:contentDescription="TODO"
                 app:srcCompat="@drawable/button_red" />
 
             <ImageView

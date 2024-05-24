@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/enemy_run_animation"
+    android:oneshot="false">
+
+    <item android:drawable="@drawable/knight_attack024" android:duration="100" />
+    <item android:drawable="@drawable/knight_attack025" android:duration="100" />
+    <item android:drawable="@drawable/knight_attack026" android:duration="100" />
+    <item android:drawable="@drawable/knight_attack027" android:duration="100" />
+    <item android:drawable="@drawable/knight_attack028" android:duration="100" />
+    <item android:drawable="@drawable/knight_attack029" android:duration="100" />
+    <item android:drawable="@drawable/knight_attack030" android:duration="100" />
+    <!-- Add more items for each frame of the animation -->
+
+</animation-list>
