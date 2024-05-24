@@ -286,7 +286,7 @@ class Level1Activity : AppCompatActivity() {
             // Delay before starting the next wave
             handler.postDelayed({
                 waveNumber += 1
-                enemySpawnInterval = (enemySpawnInterval * 0.8).toInt()
+                enemySpawnInterval = (enemySpawnInterval * 0.95).toInt()
                 handler.postDelayed({ startNextWave() }, waveInterval)
                 startWave()
             }, waveInterval)
