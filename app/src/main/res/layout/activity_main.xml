@@ -322,6 +322,40 @@
 
     </FrameLayout>
 
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp">
+
+        <ImageButton
+            android:id="@+id/armouryBttn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:contentDescription="@string/armoury_desc"
+            android:maxWidth="101dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+            tools:ignore="RedundantDescriptionCheck,VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aldrich"
+            android:gravity="center"
+            android:text="Shop"
+            android:textColor="#232323"
+            android:textColorHighlight="#242424"
+            android:textColorHint="#303030"
+            android:textSize="17sp"
+            tools:ignore="DuplicateIds" />
+    </FrameLayout>
+
     <ImageView
         android:id="@+id/Chrono_Heist"
         android:layout_width="394dp"
