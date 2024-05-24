@@ -23,6 +23,329 @@
         android:src="@drawable/stars" />
 
     <FrameLayout
+        android:id="@+id/Store"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start">
+
+            <ImageButton
+                android:id="@+id/storebattlepassBackBttn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#00FFFFFF"
+                android:contentDescription="back button"
+                app:srcCompat="@drawable/ui_flat_button_large_lock_01a1" />
+
+            <TextView
+                android:id="@+id/storetextView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableStart="?attr/actionModeCloseDrawable"
+                android:text="Back" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/storetextView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="-55dp"
+            android:fontFamily="@font/aldrich"
+            android:text="Store"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#303030"
+            android:textSize="32sp" />
+
+        <TableLayout
+            android:id="@+id/skinsTable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:visibility="visible">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="197dp">
+
+                <FrameLayout
+                    android:id="@+id/blueFrame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/blue_skins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="176dp"
+                        android:scaleType="centerCrop"
+                        android:scaleX="0.5"
+                        android:scaleY=".5"
+                        app:srcCompat="@drawable/tower_blue" />
+
+                    <ImageButton
+                        android:id="@+id/blueBuyBttn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="-10dp"
+                        android:background="#00000000"
+                        android:contentDescription="@string/battlepass_desc"
+                        android:maxWidth="125dp"
+                        android:minHeight="48dp"
+                        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+                        tools:ignore="RedundantDescriptionCheck" />
+
+                    <TextView
+                        android:id="@+id/blueBuyTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="OWNED"
+                        android:textColor="#232323"
+                        android:textColorHint="#303030"
+                        android:textSize="16sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/redFrame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/red_skins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="176dp"
+                        android:scaleType="centerCrop"
+                        android:scaleX="0.5"
+                        android:scaleY=".5"
+                        app:srcCompat="@drawable/tower_red" />
+
+                    <ImageButton
+                        android:id="@+id/redBuyBttn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="-10dp"
+                        android:background="#00000000"
+                        android:contentDescription="@string/battlepass_desc"
+                        android:maxWidth="125dp"
+                        android:minHeight="48dp"
+                        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+                        tools:ignore="RedundantDescriptionCheck" />
+
+                    <TextView
+                        android:id="@+id/redBuyTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="BUY"
+                        android:textColor="#232323"
+                        android:textColorHint="#303030"
+                        android:textSize="16sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/purpleFrame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/purple_skins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="176dp"
+                        android:scaleType="centerCrop"
+                        android:scaleX="0.5"
+                        android:scaleY=".5"
+                        app:srcCompat="@drawable/tower_purple" />
+
+                    <ImageButton
+                        android:id="@+id/purpleBuyBttn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="-10dp"
+                        android:background="#00000000"
+                        android:contentDescription="@string/battlepass_desc"
+                        android:maxWidth="125dp"
+                        android:minHeight="48dp"
+                        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+                        tools:ignore="RedundantDescriptionCheck" />
+
+                    <TextView
+                        android:id="@+id/purpleBuyTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="BUY"
+                        android:textColor="#232323"
+                        android:textColorHint="#303030"
+                        android:textSize="16sp" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/yellowFrame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/yellow_skins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="176dp"
+                        android:scaleType="centerCrop"
+                        android:scaleX="0.5"
+                        android:scaleY=".5"
+                        app:srcCompat="@drawable/tower_yellow" />
+
+                    <ImageButton
+                        android:id="@+id/yellowBuyBttn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginBottom="-10dp"
+                        android:background="#00000000"
+                        android:contentDescription="@string/battlepass_desc"
+                        android:maxWidth="125dp"
+                        android:minHeight="48dp"
+                        app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+                        tools:ignore="RedundantDescriptionCheck" />
+
+                    <TextView
+                        android:id="@+id/yellowBuyTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/aldrich"
+                        android:text="BUY"
+                        android:textColor="#232323"
+                        android:textColorHint="#303030"
+                        android:textSize="16sp" />
+
+                </FrameLayout>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/skinsFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp">
+
+                <ImageButton
+                    android:id="@+id/skinsBttn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:contentDescription="@string/battlepass_desc"
+                    android:maxWidth="125dp"
+                    android:minHeight="48dp"
+                    app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+                    tools:ignore="RedundantDescriptionCheck" />
+
+                <TextView
+                    android:id="@+id/skinstxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/aldrich"
+                    android:text="Skins"
+                    android:textColor="#232323"
+                    android:textColorHint="#303030"
+                    android:textSize="16sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/StoreBattlePassBttnFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:visibility="visible">
+
+                <ImageButton
+                    android:id="@+id/StorebattlesPassBttn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:contentDescription="@string/battlepass_desc"
+                    android:maxWidth="125dp"
+                    android:minHeight="48dp"
+                    app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+                    tools:ignore="RedundantDescriptionCheck" />
+
+                <TextView
+                    android:id="@+id/StoretextView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/aldrich"
+                    android:text="BattlePass"
+                    android:textColor="#232323"
+                    android:textColorHint="#303030"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/meatFrame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:visibility="visible">
+
+                <ImageButton
+                    android:id="@+id/meatBttn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:contentDescription="@string/options_desc"
+                    android:maxWidth="101dp"
+                    android:minHeight="48dp"
+                    app:srcCompat="@drawable/ui_flat_button_large_lock_01a1"
+                    tools:ignore="VisualLintBounds,RedundantDescriptionCheck" />
+
+                <TextView
+                    android:id="@+id/meatText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/aldrich"
+                    android:gravity="center"
+                    android:text="Meat"
+                    android:textColor="#232323"
+                    android:textColorHint="#303030"
+                    android:textSize="19sp" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
         android:id="@+id/battlepassMenu"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -323,6 +646,7 @@
     </FrameLayout>
 
     <FrameLayout
+        android:id="@+id/StoreBttn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -330,7 +654,7 @@
         android:layout_marginBottom="40dp">
 
         <ImageButton
-            android:id="@+id/armouryBttn2"
+            android:id="@+id/StoreBttnImage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -716,7 +1040,7 @@
                 android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imageView6"
+                android:id="@+id/enemy1Image"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/tower_blue" />
@@ -870,7 +1194,7 @@
             android:visibility="invisible">
 
             <ImageView
-                android:id="@+id/imageView5"
+                android:id="@+id/knightImage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:scaleX="1.5"
@@ -1031,49 +1355,55 @@
         </TableRow>
     </TableLayout>
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="50dp"
-        android:rotationX="4"
-        app:srcCompat="@drawable/knight_attack027" />
+    <FrameLayout
+        android:id="@+id/imageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="180dp"
-        android:scaleType="centerCrop"
-        android:scaleX="1.5"
-        android:scaleY="1.5"
-        app:srcCompat="@drawable/enemy_red_walk007" />
+        <ImageView
+            android:id="@+id/knightImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:rotationX="4"
+            app:srcCompat="@drawable/knight_attack027" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="160dp"
-        android:layout_marginEnd="20dp"
-        android:rotationX="6"
-        android:rotationY="180"
-        android:scaleType="centerCrop"
-        android:scaleX="1.5"
-        android:scaleY="1.5"
-        app:srcCompat="@drawable/enemy_red_walk007" />
+        <ImageView
+            android:id="@+id/enemy1Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="180dp"
+            android:scaleType="centerCrop"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:srcCompat="@drawable/enemy_red_walk007" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@id/stars"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="20dp"
-        android:rotationX="-6"
-        app:srcCompat="@drawable/archer_blue_shoot_s051" />
+        <ImageView
+            android:id="@+id/enemy2Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="20dp"
+            android:rotationX="6"
+            android:rotationY="180"
+            android:scaleType="centerCrop"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            app:srcCompat="@drawable/enemy_red_walk007" />
+
+        <ImageView
+            android:id="@+id/archerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="20dp"
+            android:rotationX="-6"
+            app:srcCompat="@drawable/archer_blue_shoot_s051" />
+    </FrameLayout>
 
 
 </RelativeLayout>

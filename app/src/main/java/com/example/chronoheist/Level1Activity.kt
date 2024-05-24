@@ -32,7 +32,7 @@ class Level1Activity : AppCompatActivity() {
     private var healthPoints = 100
     private var waveNumber = 1
 
-    private var startgold = 1050
+    private var startgold = 150
     private var gold = 0
 
     private var enemyCount = 10

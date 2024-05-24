@@ -45,6 +45,22 @@ class MainActivity : AppCompatActivity() {
         val battlepassMenu = findViewById<FrameLayout>(R.id.battlepassMenu)
         val battlepassBack = findViewById<ImageButton>(R.id.battlepassBackBttn)
         val mapSelectBack = findViewById<ImageButton>(R.id.mapSelectBackBttn)
+        val storeFrame = findViewById<FrameLayout>(R.id.Store)
+        val storeBttnFrame = findViewById<FrameLayout>(R.id.StoreBttn)
+        val storeBttn = findViewById<ImageButton>(R.id.StoreBttnImage)
+        val storeBack = findViewById<ImageButton>(R.id.storebattlepassBackBttn)
+        val images = findViewById<FrameLayout>(R.id.imageLayout)
+
+        storeBttn.setOnClickListener{
+            playFrame.visibility = View.GONE
+            optionsFrame.visibility = View.GONE
+            armouryFrame.visibility = View.GONE
+            battlepassFrame.visibility = View.GONE
+            mapSelect.visibility = View.GONE
+            storeFrame.visibility = View.VISIBLE
+            storeBttnFrame.visibility = View.GONE
+            images.visibility = View.GONE
+        }
 
         playBttn.setOnClickListener {
             playFrame.visibility = View.GONE
@@ -52,13 +68,19 @@ class MainActivity : AppCompatActivity() {
             armouryFrame.visibility = View.GONE
             battlepassFrame.visibility = View.GONE
             mapSelect.visibility = View.VISIBLE
+            storeFrame.visibility = View.GONE
+            storeBttnFrame.visibility = View.GONE
+            images.visibility = View.GONE
         }
         optionsBttn.setOnClickListener {
+            images.visibility = View.GONE
             playFrame.visibility = View.GONE
             optionsFrame.visibility = View.GONE
             armouryFrame.visibility = View.GONE
             battlepassFrame.visibility = View.GONE
             optionsLayout.visibility = View.VISIBLE
+            storeFrame.visibility = View.GONE
+            storeBttnFrame.visibility = View.GONE
         }
         battlepass.setOnClickListener {
             playFrame.visibility = View.GONE
@@ -67,6 +89,9 @@ class MainActivity : AppCompatActivity() {
             battlepassFrame.visibility = View.GONE
             battlepassMenu.visibility = View.VISIBLE
             chronoHeist.visibility = View.GONE
+            storeFrame.visibility = View.GONE
+            storeBttnFrame.visibility = View.GONE
+            images.visibility = View.GONE
         }
         armouryBttn.setOnClickListener {
             playFrame.visibility = View.GONE
@@ -75,6 +100,9 @@ class MainActivity : AppCompatActivity() {
             battlepassFrame.visibility = View.GONE
             armouryMenu.visibility = View.VISIBLE
             chronoHeist.visibility = View.GONE
+            storeFrame.visibility = View.GONE
+            storeBttnFrame.visibility = View.GONE
+            images.visibility = View.GONE
         }
         backBttn.setOnClickListener {
             playFrame.visibility = View.VISIBLE
@@ -82,6 +110,9 @@ class MainActivity : AppCompatActivity() {
             armouryFrame.visibility = View.VISIBLE
             battlepassFrame.visibility = View.VISIBLE
             optionsLayout.visibility = View.GONE
+            storeFrame.visibility = View.GONE
+            storeBttnFrame.visibility = View.VISIBLE
+            images.visibility = View.VISIBLE
         }
         armouryBack.setOnClickListener {
             playFrame.visibility = View.VISIBLE
@@ -90,6 +121,20 @@ class MainActivity : AppCompatActivity() {
             battlepassFrame.visibility = View.VISIBLE
             armouryMenu.visibility = View.GONE
             chronoHeist.visibility= View.VISIBLE
+            storeFrame.visibility = View.GONE
+            storeBttnFrame.visibility = View.VISIBLE
+            images.visibility = View.VISIBLE
+        }
+        storeBack.setOnClickListener{
+            playFrame.visibility = View.VISIBLE
+            optionsFrame.visibility = View.VISIBLE
+            armouryFrame.visibility = View.VISIBLE
+            battlepassFrame.visibility = View.VISIBLE
+            battlepassMenu.visibility = View.GONE
+            chronoHeist.visibility= View.VISIBLE
+            storeFrame.visibility = View.GONE
+            storeBttnFrame.visibility = View.VISIBLE
+            images.visibility = View.VISIBLE
         }
         battlepassBack.setOnClickListener {
             playFrame.visibility = View.VISIBLE
@@ -98,6 +143,9 @@ class MainActivity : AppCompatActivity() {
             battlepassFrame.visibility = View.VISIBLE
             battlepassMenu.visibility = View.GONE
             chronoHeist.visibility= View.VISIBLE
+            storeFrame.visibility = View.GONE
+            storeBttnFrame.visibility = View.VISIBLE
+            images.visibility = View.VISIBLE
         }
         mapSelectBack.setOnClickListener {
             playFrame.visibility = View.VISIBLE
@@ -105,6 +153,9 @@ class MainActivity : AppCompatActivity() {
             armouryFrame.visibility = View.VISIBLE
             battlepassFrame.visibility = View.VISIBLE
             mapSelect.visibility = View.GONE
+            storeFrame.visibility = View.GONE
+            storeBttnFrame.visibility = View.VISIBLE
+            images.visibility = View.VISIBLE
 
         }
 
