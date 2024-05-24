@@ -725,7 +725,7 @@
         android:layout_marginTop="34dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="34dp"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <ImageView
             android:id="@+id/buyMenuBG"
@@ -793,7 +793,7 @@
         <FrameLayout
             android:id="@+id/barracksFrame"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="310dp">
 
             <Button
                 android:id="@+id/barracksBttn"
@@ -926,36 +926,6 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="5dp"
                 app:srcCompat="@drawable/disable_01" />
-        </FrameLayout>
-
-        <FrameLayout
-            android:id="@+id/buyBttnFrame"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|center_horizontal"
-            android:layout_marginBottom="40dp">
-
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="196dp"
-                android:layout_height="65dp"
-                android:layout_gravity="bottom|center"
-                android:background="#00000000"
-                android:scaleX="0.75"
-                app:srcCompat="@drawable/button_hover_3slides" />
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/aldrich"
-                android:text="TextView"
-                android:textAllCaps="true"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                tools:text="Buy" />
         </FrameLayout>
 
     </FrameLayout>
