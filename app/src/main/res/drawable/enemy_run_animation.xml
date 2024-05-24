@@ -3,16 +3,12 @@
     android:id="@+id/enemy_run_animation"
     android:oneshot="false">
 
-    <item android:drawable="@drawable/hobbit___run1" android:duration="100" />
-    <item android:drawable="@drawable/hobbit___run2" android:duration="100" />
-    <item android:drawable="@drawable/hobbit___run3" android:duration="100" />
-    <item android:drawable="@drawable/hobbit___run4" android:duration="100" />
-    <item android:drawable="@drawable/hobbit___run5" android:duration="100" />
-    <item android:drawable="@drawable/hobbit___run6" android:duration="100" />
-    <item android:drawable="@drawable/hobbit___run7" android:duration="100" />
-    <item android:drawable="@drawable/hobbit___run8" android:duration="100" />
-    <item android:drawable="@drawable/hobbit___run9" android:duration="100" />
-    <item android:drawable="@drawable/hobbit___run10" android:duration="100" />
+    <item android:drawable="@drawable/enemy_red_walk006" android:duration="100" />
+    <item android:drawable="@drawable/enemy_red_walk007" android:duration="100" />
+    <item android:drawable="@drawable/enemy_red_walk008" android:duration="100" />
+    <item android:drawable="@drawable/enemy_red_walk009" android:duration="100" />
+    <item android:drawable="@drawable/enemy_red_walk010" android:duration="100" />
+    <item android:drawable="@drawable/enemy_red_walk011" android:duration="100" />
     <!-- Add more items for each frame of the animation -->
 
 </animation-list>
